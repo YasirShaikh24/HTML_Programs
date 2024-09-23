@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6699cc;
+    padding: 20px;
+    color: white;
+    border-bottom: 5px solid black;
+}
+
+.header-left .title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.login-register button {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+nav {
+    background-color: #3366cc;
+    padding: 20px;
+    width: 200px;
+    height: calc(100vh - 160px); /* Height adjusted for header and footer */
+    float: left;
+    border-right: 5px solid black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 30px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+    background-color: #99ccff;
+    height: calc(100vh - 160px);
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.category {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #6699cc;
+    color: white;
+    border-top: 5px solid black;
+    clear: both;
+    position: relative;
+    height: 60px;
+}

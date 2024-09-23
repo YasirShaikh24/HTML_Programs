@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Regristration form</title>
+
+        <script type="text/javascript">
+            function checkdata()
+            {
+                t=document.record;
+
+                if(t.fname.value)
+                {
+                    alert("Please enter your first name");
+                    t.fname.focus();
+                    return false;
+                }
+            }
+        </script>
+
+
+    </head>
+    <body>
+        <form method="get" name="record">
+            <table  >
+                <tr>
+                <th colspan="2">Registration  form</th> 
+            </tr>
+            <tr>
+                <td> <label>first name:</label></td>
+            <td><input type="text" name="fname"  id="fname" /></td>
+         </tr>
+         <tr>
+            <td> <label>last name:</label></td>
+        <td><input type="text" name="fname"  id="fname" /></td>
+
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><textarea rows="2" cols="20"></textarea></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="e1" id="e1"/></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="Password" name="p1" id="p1"/></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td><input type="radio" name="r1" id="male" />male
+            <input type="radio" name="r1" id="female" />female</td>
+        </tr>
+        <tr>
+            <td>Hobby:</td>
+            <td><input type="checkbox" name="c1" checked>cricket 
+            <input type="checkbox" name="f1" >football
+            <input type="checkbox" name="s1" >singing </td>
+        </tr>
+        <tr>
+            <td>city:</td>
+            <td>
+                <select name="s1">
+                <option value="--select city--">--select city--</option>
+                <option value="baroda">baroda</option>
+                <option value="rajkot">rajkot</option>
+                <option value="mumbai">mumbai</option>
+                <tr>
+                    <td> Upload file:</td>
+                    <td><input type="file" name="f1" ></td>
+                </tr>
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+        <td><input type="submit" name="submit" value="submit" onclick="checkdata()" ></td>
+        <td><input type="button" name="cancel" value="cancel"> </td>
+        </tr>
+        
+            
+            
+        </table>
+        </form>
+    </body>
+</html>

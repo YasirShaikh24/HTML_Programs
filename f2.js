@@ -1,0 +1,1 @@
+document.writeln("Sum of two numbers");
